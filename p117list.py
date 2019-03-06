@@ -100,9 +100,81 @@
 # print(str1.index(str2, 10))
 # print(str1.index(str2, 15))
 
+# 12.12循环处理列表
 # letters = ['a', 'b', 'c', 'd', 'e']
 # for i in letters:
 #     print(i)
+
+# 12.13列表排序
+# letters = ['d', 'a', 'e', 'c', 'b']
+# print(letters)  # 打印原始序列
+# # print(letters.sort())  不能这样做，必须分丙步来完成，如下：
+# letters.sort()  # 按正序排序
+# print(letters)
+#
+# letters.reverse()   # 按逆序排序，第一种方法。
+# print(letters)
+
+# 按逆序排序，第二种方法
+# letters = ['d', 'a', 'e', 'c', 'b']
+# print(letters)  # 打印原始序列
+#
+# letters.sort()  # 按正序排序
+# print(letters)
+#
+# letters.sort(reverse=True)   # 按逆序排序，第一种方法。
+# print(letters)
+
+# original = [5, 2, 3, 1, 4]
+# print(original)
+# new = original
+#
+# new.sort()
+# print(new)
+# print(original)
+
+# new = original[:]
+# print(new)
+# new.sort()
+# print(new)
+# print(original)
+
+# sorted()
+# original = [5, 2, 3, 1, 4]
+# print(original)
+# newer = sorted(original)
+# print(original)
+# print(newer)
+
+# 12.14 可变和不可变
+# my_tuple = ("red", "green", "blue")
+# print(type(my_tuple))
+# print(my_tuple)
+
+# 12.15 双重列表：数据表。
+# joemarks = [55, 63, 77, 81]
+# tommarks = [65, 61, 67, 72]
+# betmarks = [97, 95, 92, 88]
+#
+# classmarks = [joemarks, tommarks, betmarks]
+# print(classmarks)
+#
+# print(classmarks[0][0])
+# print(classmarks[2][3])
+# print(classmarks[2][1])
+
+# 12.6字典
+# phonenumbers = {}  # 首先建立一个空字典，准备用于存储数据。
+# phonenumbers["John"] = "555-1234"
+# phonenumbers["Mary"] = "555-6789"
+# phonenumbers["Bobz"] = "444-4321"
+# phonenumbers["Jeny"] = "867-5309"
+# print(phonenumbers)
+# print(phonenumbers["Mary"])
+# print(phonenumbers.keys())    # 列出字典中所有的键
+# print(phonenumbers.values())  # 列出字典中所有的值
+# for key in sorted(phonenumbers.keys()):
+#     print(key, phonenumbers[key])
 
 #  动手试一试
 name = input('Enter 5 names:')
