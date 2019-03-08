@@ -177,8 +177,42 @@
 #     print(key, phonenumbers[key])
 
 #  动手试一试
-name = input('Enter 5 names:')
-print(type(name))
-print("The names are: ", name)
-sort_name = name.sort()
-print(sort_name)
+# 1.写一个程序：让用户提供5个名字，程序要把这5个名字保存在一个列表中，最后打印出来。
+names = ["tom", "jack", "peter", "mark", "john"]
+# print(names[0])
+# print(names[1])
+# print(names[2])
+# print(names[3])
+# print(names[4])
+# print("The names are:", names[0], names[1], names[2], names[3], names[4])  # 最笨的办法
+
+for i in names:
+    print(i)
+print("The names are:", end=', ')
+for i in names:
+    print(i, end=', ')
+
+# 2.修改第一题的程序，要求不仅显示原来的名字列表，还要显示出排序后的列表。
+print('\n')
+print(names)
+names.sort()
+print(names)
+
+# 3.修改第一题的程序，要求只显示用户键入的第3个名字。
+
+
+
+
+# 4.修改第一题的程序，让用户替换其中一个名字。用户应该能选择要替换那个名字，然后键入新名字。最后显示这个新列表：
+# 5.编写一个字典程序，让用户可以添加单词和定义，然后可以查找这些单词。确保当要查找的单词不存在时，用户能够知晓。
+    # 运行的时候，经应该是像这样的：
+    # Add or look up a word (a/1)? a
+    # Type the word: computer
+    # Type the definition: A machine that does very fast math
+    # Word added!
+    # Add or look up a word (a/1)? 1
+    # Type the word: computer
+    # A machine that does very fast math
+    # Add or look up a word (a/1)? 1
+    # Type the word : qwerty
+    # That word isn't in the dictionary yet.
