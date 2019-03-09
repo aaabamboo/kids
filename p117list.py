@@ -201,17 +201,25 @@ for i in friends:
     print(i, end=' ')
 
 # 2.修改第一题的程序，要求不仅显示原来的名字列表，还要显示出排序后的列表。
+# tom jack peter mark john
 friends = []
 names = input("please enter five names:")
 print(type(names))    # 显示字符串类型
 name = names.split()  # 用split()函数将输入的字符串转换为列表类型
 print(type(name))     # 显示列表类型
-friends.extend(name)  # 添加多个元素到空的列表当中
+print(name)           # 第2题显示的原列表
+name.sort()           # 第2题显示出排序后的列表
+print(name)
 
-print(friends)        # 打印列表
+friends.extend(name)  # 添加多个元素到空的列表当中
 print(type(friends))
-friends.sort()        # 排序
-print(friends)        # 排序后打印输出
+print(friends)
+
+for i in friends:
+    print(i)
+print("The names are:", end=' ')
+for i in friends:
+    print(i, end=' ')
 
 # 3.修改第一题的程序，要求只显示用户键入的第3个名字。
 
