@@ -96,4 +96,4 @@ print("price =", my_price, "total price =", totalprice)
 print("my_price (outside functin) = ", my_price)  # 打印全局版本的my_price
 
 
-### finish OK end
+### use tow weeks of time finish it , because boy sick
